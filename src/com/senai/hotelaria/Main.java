@@ -45,6 +45,8 @@ public class Main {
         Funcionarios funcionario = new Funcionarios("Jéss", "Recepção");
         Funcionarios funcionario2 = new Funcionarios("Bianca", "Atendente");
         Funcionarios funcionario3 = new Funcionarios("Fábio", "Segurança");
+        Funcionarios funcionario4 = new Funcionarios("Fábio", "Segurança");
+        Funcionarios funcionario5 = new Funcionarios("Fábio", "Segurança");
         hotel.exibirInformacoes();
 
         Servico servico = new Servico ("Limpeza de quarto" ,1700.00);
