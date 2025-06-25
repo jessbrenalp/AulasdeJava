@@ -13,9 +13,37 @@ public class Hotel {
         this.endereco = endereco;
         this.quartos = new ArrayList<>();
     }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public List<Quarto> getQuartos() {
+        return quartos;
+    }
+
+    public void setQuartos(List<Quarto> quartos) {
+        this.quartos = quartos;
+    }
+
     // Método para adicionar um quarto
     public void adicionarQuarto(Quarto quarto) {
-        quartos.add(quarto);
+        if (quarto.isOcupado() == false) {
+            quartos.add(quarto);
+        }
     }
     // Método para exibir informações
     public void exibirInformacoes() {

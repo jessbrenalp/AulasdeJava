@@ -9,6 +9,26 @@ public class Servico {
         this.descricao = descricao;
         this.custo = custo;
     }
+
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public double getCusto() {
+        return custo;
+    }
+
+    public void setCusto(double custo) {
+        if (custo >= 100 && custo <= 250) {
+            this.custo = custo;
+        }
+    }
+
     // Método para exibir informações do serviço
     public void exibirInformacoes() {
         System.out.println("Descrição do Serviço: " + descricao);
